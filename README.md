@@ -1,62 +1,35 @@
-Weather API Lightning Web Component (LWC)
+**Weather API Lightning Web Component (LWC)**
+
 A Salesforce Lightning Web Component that fetches and displays real-time weather data for a given location using the OpenWeatherMap API.
 
-Table of Contents
+**Table of Contents**
+
 Features
-
-
 Demo
-
-
 Prerequisites
-
-
 Installation
-
-
 Usage
-
-
 Files Structure
-
-
 Technology Stack
-
-
 Future Improvements
 
 
 
-Features
-Fetches real-time weather data for any location.
+**1.Features**
+a.Fetches real-time weather data for any location.
+
+  Displays:
+   Temperature
+   Feels like temperature
+   Minimum & Maximum temperature
+   Pressure
+   Humidity
 
 
-Displays:
+b.Built using Lightning Web Components and Apex.
+c.Interactive UI with lightning-input and lightning-button.
 
-
-Temperature
-
-
-Feels like temperature
-
-
-Minimum & Maximum temperature
-
-
-Pressure
-
-
-Humidity
-
-
-Built using Lightning Web Components and Apex.
-
-
-Interactive UI with lightning-input and lightning-button.
-
-
-
-Demo
+**Demo**
 Input: City name (e.g., Hyderabad, Chennai)
 Output:
 Location: Hyderabad
@@ -71,51 +44,26 @@ Humidity: 60 %
 <img width="1919" height="711" alt="image" src="https://github.com/user-attachments/assets/080d9a3d-d5f0-44fa-ab72-87886688b672" />
 
 
+**Prerequisites**
+1.Salesforce DX setup
+2.Salesforce org (Scratch org, Dev org, or Sandbox)
+3.OpenWeatherMap API key
 
-Prerequisites
-Salesforce DX setup
+**Installation**
+ i.Clone the repository:git clone https://github.com/your-username/Weather-API.git
+                        cd Weather-API
+ii. Authorize your Salesforce org:
+iii.sfdx auth:web:login -a myOrg
+iv.Deploy the source to your org:
+v.sfdx force:source:deploy -p force-app
 
+**Usage**
+i.Open your Salesforce org.
+ii.Go to App Builder and drag the WeatherAPI LWC onto a Lightning page.
+iii.Enter a location and click Fetch Temperature.
+iv.Weather data will appear below the input field.
 
-Salesforce org (Scratch org, Dev org, or Sandbox)
-
-
-OpenWeatherMap API key
-
-
-
-Installation
-Clone the repository:
-
-
-git clone https://github.com/your-username/Weather-API.git
-cd Weather-API
-
-Authorize your Salesforce org:
-
-
-sfdx auth:web:login -a myOrg
-
-Deploy the source to your org:
-
-
-sfdx force:source:deploy -p force-app
-
-
-Usage
-Open your Salesforce org.
-
-
-Go to App Builder and drag the WeatherAPI LWC onto a Lightning page.
-
-
-Enter a location and click Fetch Temperature.
-
-
-Weather data will appear below the input field.
-
-
-
-Files Structure
+**Files Structure**
 force-app/
 └─ main/
    └─ default/
@@ -132,28 +80,15 @@ force-app/
             └─ __tests__/weatherAPI.test.js
 
 
-Technology Stack
-Salesforce Lightning Web Components (LWC)
+**Technology Stack**
+   i.Salesforce Lightning Web Components (LWC)
+   ii.Apex Classes
+   iii.OpenWeatherMap API
+   iv.Salesforce DX
 
 
-Apex Classes
-
-
-OpenWeatherMap API
-
-
-Salesforce DX
-
-
-
-Future Improvements
-Add multiple location support.
-
-
-Show weather icons dynamically.
-
-
-Improve UI using lightning-card styling.
-
-
-Cache API responses to reduce API calls.
+**Future Improvements**
+  i.Add multiple location support.
+  ii.Show weather icons dynamically.
+  iii.Improve UI using lightning-card styling.
+  iv.Cache API responses to reduce API calls.
