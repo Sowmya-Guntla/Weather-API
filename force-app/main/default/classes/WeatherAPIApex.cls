@@ -7,7 +7,7 @@ public class WeatherAPIApex {
             return responses;
         }
         for(String loc:location){
-            String endpoint = 'https://api.openweathermap.org/data/2.5/weather?q='+loc+'&APPID=0abeeea7cc1bb0d703cddb4ad267212b&units=metric';
+            String endpoint = 'https://api.openweathermap.org/data/2.5/weather?q='+loc+'&APPID=YOUR_API&units=metric';
             HTTPRequest req = new HTTPRequest();
             req.setEndpoint(endpoint);
             req.setHeader('Content-Type','Application/JSON');
