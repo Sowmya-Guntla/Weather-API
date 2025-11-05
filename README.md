@@ -23,6 +23,7 @@ Future Improvements
 
 
 **1.Features**
+
 a.Fetches real-time weather data for any location.
 
   Displays:
@@ -34,6 +35,7 @@ a.Fetches real-time weather data for any location.
 
 
 b.Built using Lightning Web Components and Apex.
+
 c.Interactive UI with lightning-input and lightning-button.
 
 **Demo**
