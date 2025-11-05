@@ -1,0 +1,29 @@
+<template>
+    <lightning-card icon-name="utility:world" title="Weather API">
+        <div class="slds-m-around_medium">
+            <lightning-input 
+                type="text"
+                label="Enter your location"
+                placeholder="E.g, Hyderabad, Chennai"
+                onchange={handleChange}
+                name="location">
+            </lightning-input>
+            <lightning-button 
+                label="Fetch Temperature"
+                onclick={handleOnclick}
+                variant="brand"
+                class="slds-m-top_small">
+            </lightning-button>
+        </div>
+    </lightning-card>
+
+    <template if:true={weatherData}>
+        <p>Location: {weatherData.location}</p>
+        <p>Temperature: {weatherData.temperature} °C</p>
+        <p>Feels Like: {weatherData.feels_like} °C</p>
+        <p>Min Temp: {weatherData.temp_min} °C</p>
+        <p>Max Temp: {weatherData.temp_max} °C</p>
+        <p>Pressure: {weatherData.pressure} hPa</p>
+        <p>Humidity: {weatherData.humidity} %</p>
+    </template>
+</template>
