@@ -5,12 +5,19 @@ A Salesforce Lightning Web Component that fetches and displays real-time weather
 **Table of Contents**
 
 Features
+
 Demo
+
 Prerequisites
+
 Installation
+
 Usage
+
 Files Structure
+
 Technology Stack
+
 Future Improvements
 
 
