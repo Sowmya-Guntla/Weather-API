@@ -2,23 +2,23 @@
 
 A Salesforce Lightning Web Component that fetches and displays real-time weather data for a given location using the OpenWeatherMap API.
 
-**Table of Contents**
+**Table of Contents**:
 
-Features
+   1.Features
 
-Demo
+   2.Demo
 
-Prerequisites
+   3.Prerequisites
 
-Installation
+  4.Installation
 
-Usage
+  5.Usage
 
-Files Structure
+  6.Files Structure
 
-Technology Stack
+  7.Technology Stack
 
-Future Improvements
+  8.Future Improvements
 
 
 
@@ -38,9 +38,11 @@ b.Built using Lightning Web Components and Apex.
 
 c.Interactive UI with lightning-input and lightning-button.
 
-**Demo**
+2**Demo**:
 Input: City name (e.g., Hyderabad, Chennai)
+
 Output:
+
 Location: Hyderabad
 Temperature: 30 °C
 Feels Like: 32 °C
@@ -53,51 +55,85 @@ Humidity: 60 %
 <img width="1919" height="711" alt="image" src="https://github.com/user-attachments/assets/080d9a3d-d5f0-44fa-ab72-87886688b672" />
 
 
-**Prerequisites**
+3**Prerequisites**:
+
 1.Salesforce DX setup
+
 2.Salesforce org (Scratch org, Dev org, or Sandbox)
+
 3.OpenWeatherMap API key
 
-**Installation**
+
+4.**Installation**:
+
  i.Clone the repository:git clone https://github.com/your-username/Weather-API.git
                         cd Weather-API
-ii. Authorize your Salesforce org:
-iii.sfdx auth:web:login -a myOrg
-iv.Deploy the source to your org:
-v.sfdx force:source:deploy -p force-app
+                        
+ii. Authorize your Salesforce org:sfdx auth:web:login -a myOrg
 
-**Usage**
+iii.Deploy the source to your org:sfdx force:source:deploy -p force-app
+
+5**Usage**:
+
 i.Open your Salesforce org.
+
 ii.Go to App Builder and drag the WeatherAPI LWC onto a Lightning page.
+
 iii.Enter a location and click Fetch Temperature.
+
 iv.Weather data will appear below the input field.
 
-**Files Structure**
+
+
+6**Files Structure**/:
+
 force-app/
+
 └─ main/
+
    └─ default/
+   
       ├─ classes/
+      
       │  ├─ WeatherAPIApex.cls
+      
       │  ├─ WeatherAPIApex.cls-meta.xml
+      
       │  ├─ WeatherResponse.cls
+      
       │  └─ WeatherResponse.cls-meta.xml
+      
       └─ lwc/
+      
          └─ weatherAPI/
+         
             ├─ weatherAPI.html
+            
             ├─ weatherAPI.js
+            
             ├─ weatherAPI.js-meta.xml
+            
             └─ __tests__/weatherAPI.test.js
+            
 
 
-**Technology Stack**
+7.**Technology Stack**:
+
    i.Salesforce Lightning Web Components (LWC)
+   
    ii.Apex Classes
+   
    iii.OpenWeatherMap API
+   
    iv.Salesforce DX
 
 
-**Future Improvements**
+8**Future Improvements**:
+
   i.Add multiple location support.
+  
   ii.Show weather icons dynamically.
+  
   iii.Improve UI using lightning-card styling.
+  
   iv.Cache API responses to reduce API calls.
